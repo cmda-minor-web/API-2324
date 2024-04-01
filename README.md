@@ -73,4 +73,11 @@ de 3 criteria hieronder moeten voldoen. Een hoger cijfer kan je halen door verde
 | Week 3 - Enhance           | College + workshops | Workshops             | Feedback gesprekken    |
 | Week 4 - Enhance & wrap up | Individuele vragen  | Individuele vragen    | Beoordelingsgesprekken |
 
+## Resources
 
+- Om serverside te kunnen renderen maak ik gebruik van [TinyHttp](https://github.com/tinyhttp), maar je kan ook kiezen voor [Express](https://expressjs.com/).
+- Voor templating maak ik gebruik van [LiquidJS](https://liquidjs.com/), maar je kan ook kiezen voor [EJS](https://ejs.co/).
+- Voor build tooling(CSS en JS) maak ik gebruik van [Vite](https://vitejs.dev/).
+
+Voel je vrij om je eigen technolgieën te kiezen, zolang je maar kan uitleggen waarom je deze hebt gekozen en zolang
+je geen gebruik maakt van een framework zoals React, Vue, Svelte, Angular, etc. 
