@@ -8,11 +8,15 @@ export default defineConfig({
   plugins: [eslint({ exclude: ['**/node_modules/**', '**/dist/**', '**/*.min.*'] })],
   build: {
     minify: false,
-    manifest: true,
     emptyOutDir: false,
     outDir: 'dist',
     rollupOptions: {
       input: path.resolve(__dirname, 'src/index.js'),
+      output: {
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]',
+      }
     },
   },
 });
