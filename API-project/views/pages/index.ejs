@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head.ejs'); %>
+        <title>Martijn's API site</title>
+    </head>
+
+    <body>
+        <%- include('../components/nav.ejs'); %>
+        <div class="content-wrapper">
+            <div class="featured-wrapper">
+                <div class="featured-overlay">
+                    <div class="featured-text">
+                        <h3>Superheroes IV: The legend has been told</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Facilis distinctio quos praesentium ratione ad rerum totam 
+                            repellat saepe omnis, voluptas asperiores placeat corrupti 
+                            fugiat unde expedita nihil dicta vero porro?</p>
+                        <div class="button-holder">
+                            <button type="button" class="watchBtn">Watch now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-container">
+                <div class="category-title">
+                    <h2>Trending</h2>
+                </div>
+                <div class="movies swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <% trendingMovies.forEach(trendingMovie => { %>
+                        <a href="/movie/<%= trendingMovie.id %>" class="swiper-slide card">
+                            <div class="card-image">
+                                <img src="https://image.tmdb.org/t/p/w500<%=trendingMovie.poster_path%>" alt="Image of <%=trendingMovie.title%>">
+                            </div>
+                        </a>
+                    <% }); %>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <div class="category-container">
+                <div class="category-title">
+                    <h2>Actie</h2>
+                </div>
+                <div class="movies swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <% movies.forEach(movie => { %>
+                        <a href="/movie/<%= movie.id %>" class="swiper-slide card">
+                            <div class="card-image">
+                                <img src="https://image.tmdb.org/t/p/w500<%=movie.poster_path%>" alt="Image of <%=movie.title%>">
+                            </div>
+                        </a>
+                    <% }); %>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script type="module" src="/js/app.js"></script>
+    </body>
+</html>

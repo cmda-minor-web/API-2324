@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head.ejs'); %>
+        <title>Martijn's API site</title>
+    </head>
+    <body>
+        <%- include('../components/nav.ejs'); %>
+        <div class="movie-details">
+            <h2><%= movie.title %></h2>
+            <img src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>" alt="Image of <%= movie.title %>">
+            <p><strong>Release Date:</strong> <%= movie.release_date %></p>
+            <p><strong>Overview:</strong> <%= movie.overview %></p>
+            <p>Gemiddelde rating: <%= movie.vote_average %></p>
+          </div>
+        <script type="module" src="/js/app.js"></script>
+    </body>
+</html>
