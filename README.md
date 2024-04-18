@@ -62,7 +62,7 @@ de 3 criteria hieronder moeten voldoen. Een hoger cijfer kan je halen door verde
 |:---------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------|
 |                | *Project* - Je app werkt en is online beschikbaar. Daarnaast heb je je concept, technologieen, gebruikte Web API's en proces duidelijk gedocumenteerd in je `README.md`.                                                                  |               |
 |                | *Functionaliteit* - Je hebt minstens een overzicht en een detailpagina. Hoe meer dynamischer je functionaliteit.hoe beter.                                                                                                                |               |
-|                | *Enhancements* - Je laat zien dat je begrijpt hoe het web werkt door meerdere Web API's te gebruiken om een zo aantrekkelijk mogelijke gebruikerservaring neer te zetten. Je gebruikt je eigen creativiteit om iets uniks neer te zetten. |               |
+|                | *Enhancements* - Je laat zien dat je begrijpt hoe het web werkt door meerdere Web API's te gebruiken om een aantrekkelijke gebruikerservaring neer te zetten. Je gebruikt je eigen creativiteit om iets unieks neer te zetten. |               |
 
 ## Planning
 
